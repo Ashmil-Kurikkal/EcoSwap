@@ -9,24 +9,24 @@ export default function JournalSection() {
       category: 'Investigation',
       title: 'The Myth of Circular Fashion.',
       time: '8 Min Read',
-      img: 'https://images.unsplash.com/photo-1550005934-8c4d623b03f0?q=80&w=800&auto=format&fit=crop',
-      link: '#'
+      img: './myth.avif',
+      link: 'https://fashionunited.uk/news/fashion/the-myth-of-circular-fashion-economics-a-450-billion-dollar-miscalculation/2025033180832'
     },
     {
       id: 2,
       category: 'Exposé',
-      title: 'Greenwashing in the Era of Fast Trends.',
+      title: 'Greenwashing and sustainable fashion industry.',
       time: '12 Min Read',
-      img: 'https://images.unsplash.com/photo-1595950653106-6c9ebd614d3a?q=80&w=800&auto=format&fit=crop',
-      link: '#'
+      img: './greenwashing.jpeg',
+      link: 'https://www.sciencedirect.com/science/article/pii/S2452223622001225'
     },
     {
       id: 3,
       category: 'Supply Chain',
       title: 'Dyeing to Wear It: The Toxic Leather Trade.',
       time: '15 Min Read',
-      img: 'https://images.unsplash.com/photo-1558742569-424a1bf84c2f?q=80&w=800&auto=format&fit=crop',
-      link: '#'
+      img: './dyeing.jpg',
+      link: 'https://www.sciencedirect.com/science/article/pii/S2452072119300413'
     }
   ];
 
@@ -61,12 +61,21 @@ export default function JournalSection() {
           {/* Featured Video (Left Side - spans 7 cols) */}
           <div className="lg:col-span-7 group cursor-pointer">
             <FadeInText delay={0.2}>
-              <div className="relative w-full h-[400px] md:h-[600px] overflow-hidden bg-zinc-900 rounded-sm">
+              
+              {/* Changed this from a <div> to an <a> tag to make the whole card clickable! */}
+              <a 
+                href="https://www.youtube.com/watch?v=OaGp5_Sfbss" // <-- Put your YouTube link here
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="block relative w-full h-[400px] md:h-[600px] overflow-hidden bg-zinc-900 rounded-sm"
+              >
                 <motion.img 
                   whileHover={{ scale: 1.05 }}
                   transition={{ duration: 0.8, ease: "easeOut" }}
-                  src="https://images.unsplash.com/photo-1605280263929-1c4ffa372e9d?q=80&w=1200&auto=format&fit=crop" 
-                  alt="Garment Worker"
+                  // Put your thumbnail image link here. 
+                  // Pro-tip: You can use YouTube's auto-generated thumbnail using this URL format:
+                  src="https://img.youtube.com/vi/OaGp5_Sfbss/maxresdefault.jpg" 
+                  alt="Documentary Thumbnail"
                   className="w-full h-full object-cover opacity-60 group-hover:opacity-40 transition-opacity duration-700 grayscale group-hover:grayscale-0"
                 />
                 
@@ -80,9 +89,10 @@ export default function JournalSection() {
                 {/* Video Info */}
                 <div className="absolute bottom-0 left-0 p-8 w-full bg-gradient-to-t from-zinc-900 to-transparent">
                   <span className="text-xs tracking-widest uppercase text-white/70 mb-2 block">Featured Documentary</span>
-                  <h3 className="text-3xl font-serif text-white">The True Cost of Cotton</h3>
+                  <h3 className="text-3xl font-serif text-white">The True Cost</h3>
                 </div>
-              </div>
+              </a>
+
             </FadeInText>
           </div>
 
