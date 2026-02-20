@@ -23,7 +23,7 @@ export default function SubmitSwap() {
     setIsSubmitting(true);
 
     const payload = {
-      access_key: "YOUR_ACCESS_KEY_HERE", // Replace with your Web3Forms Key!
+      access_key: "4e6915ab-dc86-4ffa-8e4b-93fa164d3f66",
       subject: `New AERA Submission: ${formData.innovation}`,
       from_name: "AERA Platform",
       Brand_Name: formData.name,
@@ -107,7 +107,7 @@ export default function SubmitSwap() {
                       placeholder="Brand Name"
                     />
                     <label htmlFor="name" className="absolute left-0 -top-3.5 text-xs tracking-widest uppercase text-zinc-500 transition-all peer-placeholder-shown:text-lg peer-placeholder-shown:text-zinc-600 peer-placeholder-shown:top-3 peer-focus:-top-3.5 peer-focus:text-xs peer-focus:text-zinc-400 cursor-text">
-                      Brand / Submitter Name
+                      Submitter Name
                     </label>
                   </div>
 
@@ -152,7 +152,7 @@ export default function SubmitSwap() {
                       placeholder="Innovation Title"
                     />
                     <label htmlFor="innovation" className="absolute left-0 -top-3.5 text-xs tracking-widest uppercase text-zinc-500 transition-all peer-placeholder-shown:text-lg peer-placeholder-shown:text-zinc-600 peer-placeholder-shown:top-3 peer-focus:-top-3.5 peer-focus:text-xs peer-focus:text-zinc-400 cursor-text">
-                      Name of Material / Tool
+                      Name of Material
                     </label>
                   </div>
                 </div>
