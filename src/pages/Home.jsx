@@ -3,6 +3,7 @@ import WaterSection from '../components/home/WaterSection';
 import ImpactData from '../components/home/ImpactData';
 import GsapScroll from '../components/home/GsapScroll';
 import JournalSection from '../components/home/JournalSection';
+import Calculator from '../components/home/Calculator';
 
 export default function Home() {
   return (
@@ -13,6 +14,7 @@ export default function Home() {
       <WaterSection />
       <ImpactData />
       <JournalSection />
+      <Calculator />
       <GsapScroll />
       
     </div>
