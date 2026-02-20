@@ -21,28 +21,64 @@ export default function Directory() {
       swap: 'Organic Hemp or Linen'
     },
     { 
-      id: 3, name: 'Organic Linen', grade: 'A', category: 'Natural',
-      stats: { water: 'Low', carbon: 'Low', microplastics: 'None' },
-      verdict: 'Made from the flax plant. Requires very little water, no pesticides, and is 100% biodegradable if untreated.',
-      swap: 'The Gold Standard'
+      id: 3, name: 'Nylon 6,6', grade: 'F', category: 'Synthetic',
+      stats: { water: 'Medium', carbon: 'Very High', microplastics: 'Severe' },
+      verdict: 'Petroleum-based with high energy production. Non-biodegradable and sheds microplastics during washing.',
+      swap: 'ECONYL (Recycled Nylon) or Seawool'
     },
     { 
-      id: 4, name: 'ECONYL®', grade: 'B', category: 'Next-Gen',
-      stats: { water: 'Low', carbon: 'Low', microplastics: 'Moderate' },
-      verdict: 'Regenerated nylon made from rescued ocean fishing nets. Infinitely recyclable, but still sheds some microplastics.',
-      swap: 'Best for Activewear'
+      id: 4, name: 'Acrylic', grade: 'F', category: 'Synthetic',
+      stats: { water: 'Low', carbon: 'Very High', microplastics: 'High' },
+      verdict: 'Petroleum-derived "wool substitute" that releases toxic cyanide during production and lasts 200+ years in landfills.',
+      swap: 'Merino Wool or Alpaca'
     },
     { 
-      id: 5, name: 'Viscose (Rayon)', grade: 'C', category: 'Cellulose',
-      stats: { water: 'High', carbon: 'High', microplastics: 'None' },
-      verdict: 'Plant-based, but requires heavy chemical processing. Historically responsible for ancient forest deforestation.',
-      swap: 'EcoVero™'
+      id: 5, name: 'Viscose/Rayon', grade: 'D', category: 'Semi-Synthetic',
+      stats: { water: 'High', carbon: 'High', microplastics: 'Low' },
+      verdict: 'Made from dissolving wood pulp in toxic chemicals. Ancient forests destroyed, 70% chemicals released into waterways.',
+      swap: 'TENCEL™ Lyocell or EcoVero'
     },
     { 
-      id: 6, name: 'Piñatex®', grade: 'A', category: 'Next-Gen',
-      stats: { water: 'Low', carbon: 'Low', microplastics: 'Low' },
-      verdict: 'An innovative leather alternative made from pineapple leaf waste. Provides additional income for farming communities.',
-      swap: 'Replaces Animal Leather'
+      id: 6, name: 'Spandex/Elastane', grade: 'F', category: 'Synthetic',
+      stats: { water: 'Low', carbon: 'High', microplastics: 'Severe' },
+      verdict: 'Petrochemical stretch fiber that never biodegrades. Major contributor to ocean microplastic pollution from activewear.',
+      swap: 'ROICA V550 (Recycled) or Natural Latex'
+    },
+    { 
+      id: 7, name: 'Polyurethane (PU Leather)', grade: 'F', category: 'Synthetic',
+      stats: { water: 'Low', carbon: 'Very High', microplastics: 'High' },
+      verdict: 'Plastic-coated fabric releasing VOCs. Non-recyclable and contributes to microplastic shedding when washed.',
+      swap: 'Piñatex or Mirum'
+    },
+    { 
+      id: 8, name: 'PVC (Vinyl)', grade: 'F', category: 'Synthetic',
+      stats: { water: 'Low', carbon: 'Extreme', microplastics: 'Severe' },
+      verdict: 'Highly toxic production process. Non-biodegradable and releases dioxins when incinerated.',
+      swap: 'Natural Cork or Recycled Plastics'
+    },
+    { 
+      id: 9, name: 'Modal (Conventional)', grade: 'C', category: 'Semi-Synthetic',
+      stats: { water: 'High', carbon: 'Medium', microplastics: 'Low' },
+      verdict: 'Beech tree pulp processed with chemicals. Better than polyester but still water-intensive.',
+      swap: 'TENCEL™ Modal (Closed-Loop)'
+    },
+    { 
+      id: 10, name: 'Lyocell (Non-Certified)', grade: 'B', category: 'Semi-Synthetic',
+      stats: { water: 'Medium', carbon: 'Low', microplastics: 'None' },
+      verdict: 'Better than viscose but production varies. Look for closed-loop certification.',
+      swap: 'TENCEL™ Lyocell (Certified)'
+    },
+    { 
+      id: 11, name: 'Fast Fashion Denim', grade: 'D', category: 'Natural',
+      stats: { water: 'Extreme', carbon: 'High', microplastics: 'Medium' },
+      verdict: 'Water guzzling (7,500L per pair) with chemical dyes and sandblasting that creates microfiber pollution.',
+      swap: 'Regenerative Organic Certified Cotton'
+    },
+    { 
+      id: 12, name: 'Chrome-Tanned Leather', grade: 'D', category: 'Animal',
+      stats: { water: 'Very High', carbon: 'High', microplastics: 'None' },
+      verdict: 'Uses hazardous chromium chemicals. Tanneries pollute rivers with heavy metals.',
+      swap: 'Vegetable-Tanned or Plant-Based Leather'
     }
   ];
 
