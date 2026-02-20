@@ -10,7 +10,7 @@ export default function Hero() {
           initial={{ y: "100%" }} animate={{ y: 0 }} transition={{ duration: 1, ease: luxuryEasing }}
           className="text-xs md:text-sm tracking-[0.2em] text-zinc-500 uppercase font-medium"
         >
-          The Hidden Cost of Trends
+          The Hidden Cost of Trends, Exposed in Style!
         </motion.p>
       </div>
       <div className="flex flex-col gap-1 md:gap-2">
