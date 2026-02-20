@@ -16,7 +16,7 @@ export default function WaterSection() {
       />
       
       {/* 2. FROSTED GLASS OVERLAY */}
-      <div className="absolute inset-0 z-0 bg-white/30"></div>
+      <div className="absolute inset-0 z-0 bg-white/20"></div>
       
       {/* 3. THE 3D KNOT (Restricted to the LEFT half of the screen on desktop) */}
       <div className="absolute inset-y-0 left-0 w-full lg:w-1/2 z-10">
@@ -33,26 +33,30 @@ export default function WaterSection() {
           {/* Text is now in the SECOND column (Right side) */}
           <div className="pointer-events-auto">
             <FadeInText>
-              <h2 className="text-4xl md:text-6xl font-serif tracking-tight mb-8 drop-shadow-sm text-white">
+              <h2 className="text-4xl md:text-6xl font-serif tracking-tight mb-8 text-white drop-shadow-sm">
                 The Thirst for Denim.
               </h2>
             </FadeInText>
             
             <FadeInText delay={0.1}>
-              <p className="text-black text-lg leading-relaxed mb-8 max-w-lg bg-[#FAFAFA]/40 backdrop-blur-sm p-6 rounded-2xl border border-zinc-200 shadow-sm">
+              <p className="text-zinc-900 text-lg leading-relaxed mb-8 max-w-lg bg-[#FAFAFA]/60 backdrop-blur-md p-6 rounded-2xl border border-zinc-200 shadow-sm">
                 The cotton required to produce a single pair of jeans demands immense irrigation. The dyeing and finishing processes poison local waterways with toxic chemicals.
               </p>
             </FadeInText>
             
             <FadeInText delay={0.2}>
-              <div className="border-l-2 border-zinc-900 pl-6 py-2">
-                <span className="block text-[4rem] md:text-[6rem] font-black text-white mix-blend-difference leading-none tracking-tighter text-zinc-900 drop-shadow-sm">
+              <div className="border-l-2 border-white pl-6 py-2">
+                {/* THE MAGIC HAPPENS HERE: 
+                  mix-blend-difference + text-white inverts the background video! 
+                */}
+                <span className="block text-[5rem] md:text-[7rem] font-black text-white mix-blend-difference leading-none tracking-tighter">
                   2,000
                 </span>
-                <span className="text-white block text-lg tracking-[0.1em] uppercase text-zinc-500 mt-2">
+                
+                <span className="text-white block text-lg tracking-[0.1em] uppercase mt-2 drop-shadow-sm">
                   Gallons of water
                 </span>
-                <span className="text-white block text-sm text-zinc-400 mt-1 font-medium">
+                <span className="text-zinc-200 block text-sm mt-1 font-medium drop-shadow-sm">
                   Consumed for one pair of jeans.
                 </span>
               </div>
